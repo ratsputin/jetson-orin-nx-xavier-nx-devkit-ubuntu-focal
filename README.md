@@ -1,15 +1,17 @@
 # jetson-orin-nx-xavier-nx-devkit-ubuntu-focal
-Jetson Orin NX docker image build files
 
-`docker buildx build --tag=balenalib/jetson-orin-nx-xavier-nx-devkit-ubuntu:focal-build .`
+## Jetson Orin NX docker base image build files
 
 Build image includes NVIDIA Jetpack
 
-`docker buildx build --tag=balenalib/jetson-orin-nx-xavier-nx-devkit-ubuntu:focal-run .`
+`docker buildx build --tag=balenalib/jetson-orin-nx-xavier-nx-devkit-ubuntu:focal-build .`
 
 Runtime image
 
-Node v16.19
+`docker buildx build --tag=balenalib/jetson-orin-nx-xavier-nx-devkit-ubuntu:focal-run .`
+
+
+## Node v16.19
 
 Build image includes NVIDIA Jetpack
 
