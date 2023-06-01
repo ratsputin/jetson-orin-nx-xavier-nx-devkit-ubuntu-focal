@@ -15,8 +15,8 @@ Runtime image
 
 Build image includes NVIDIA Jetpack
 
-`docker buildx build --tag=balenalib/jetson-orin-nx-xavier-nx-devkit-ubuntu-node:16.19-focal-build .`
+`docker buildx build --tag=balenalib/jetson-orin-nx-xavier-nx-devkit-ubuntu-node:16.19-focal-build --file Dockerfile.node-16.19-focal-build .`
 
 Runtime image
 
-`docker buildx build --tag=balenalib/jetson-orin-nx-xavier-nx-devkit-ubuntu-node:16.19-focal-run .`
+`docker buildx build --tag=balenalib/jetson-orin-nx-xavier-nx-devkit-ubuntu-node:16.19-focal-run --file Dockerfile.node-16.19-focal-run .`
