@@ -12,4 +12,10 @@ node-16.19-focal-build:
 node-16.19-focal-run:
 	docker buildx build --tag=ratsputin/jetson-orin-nx-xavier-nx-devkit-ubuntu-node:16.19-focal-run --file run/Dockerfile.node-16.19-focal-run .
 
+push: focal-build focal-run node-16.19-focal-build node-16.19-focal-run
+	docker push ratsputin/jetson-orin-nx-xavier-nx-devkit-ubuntu:focal-run
+	docker push ratsputin/jetson-orin-nx-xavier-nx-devkit-ubuntu:focal-build
+	docker push ratsputin/jetson-orin-nx-xavier-nx-devkit-ubuntu-node:16.19-focal-run
+	docker push ratsputin/jetson-orin-nx-xavier-nx-devkit-ubuntu-node:16.19-focal-build
+
 all: focal-build focal-run node-16.19-focal-build node-16.19-focal-run
